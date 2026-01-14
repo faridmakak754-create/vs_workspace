@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background: #ffffff;
+    padding: 25px 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-left: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2f80ed;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1c67d6;
+}
+
+    </style>
+</head>
+<body>
+    <form action="PatientFirstEntryServlet" method="post">
+
+  <h3>New Patient Registration</h3>
+
+  Full Name:
+  <input type="text" name="name" required><br><br>
+
+  Gender:
+  <input type="radio" name="gender" value="Male" required> Male
+  <input type="radio" name="gender" value="Female"> Female
+  <input type="radio" name="gender" value="Other"> Other
+  <br><br>
+
+
+
+  Age:
+  <input type="number" name="age" required><br><br>
+
+  Mobile Number:
+  <input type="tel" name="mobile" required><br><br>
+
+  Email:
+  <input type="email" name="email"><br><br>
+
+  Address:
+  <textarea name="address"></textarea><br><br>
+
+  <button type="submit">Register Patient</button>
+
+</form>
+
+</body>
+</html>

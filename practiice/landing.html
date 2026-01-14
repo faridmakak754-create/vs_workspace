@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins";
+            box-sizing:border-box;
+        }
+
+        header {
+            background-color: #082541;
+            padding-bottom: 8px;
+            height: 230px;
+            width: 100%;
+           
+        }
+        /* navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar>h1 {
+            color: #50E9A3;
+            font-size: 22px;
+            font-weight: 500;
+
+        }
+
+        .link ul>li {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .link ul li>a {
+            text-decoration: none;
+            color: rgb(250, 249, 249);
+
+        }
+
+        .link ul li>button {
+            background-color: #50E9A3;
+            padding: 6px 12px;
+            border: 0;
+            border-radius: 4px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        /* hero part */
+        .hero{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .hero-right{
+           
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            
+        }
+        .hero-right > h1{
+
+            color: rgba(255, 255, 255, 0.849);
+            font-size: 22px;
+            font-weight: 600;
+          
+        }
+        .hero-right >p{
+            color: rgb(211, 212, 197);
+        }
+        .btn >button{
+         
+            width: 120px;
+            height: 30px;
+            background-color: #50E9A3;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 1px 1px 1px rgb(226, 225, 225);
+
+        }
+        .btn > .learn{
+            background-color: white;
+            border: 1px solid black;
+         
+        }
+        /* left side hero section */
+        .hero-left{
+            padding-right: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .above{
+            display: flex;
+            gap: 10px;
+        }
+        .below{
+            display: flex;
+            gap: 10px;
+        }
+
+        /* box */
+        .box1 ,.box4{
+            height: 60px;
+            width: 60px;
+            background-color: #50E9A3;
+            box-shadow: 1px 1px 3px rgb(102, 166, 209);
+        }
+         .box2 ,.box3{
+            height: 60px;
+            width: 60px;
+            background-color: #f2f3f2;
+             box-shadow: 1px 1px 3px rgb(102, 166, 209);
+
+        }
+        /* main section */
+        main{
+            background-color: #fff9f9;
+            padding: 8px;
+        }
+        main >h1{
+            text-align: center;
+            font-size: 21px;
+            font-weight: 400;
+            
+            
+
+        }
+        /* card part */
+        .cart{
+
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height:280px;
+            width: 280px;
+            border-radius: 6px;
+            background-color: #f4f7f4;
+            padding: 0 10px;
+
+            box-shadow: 0px 0px 10px rgb(117, 117, 117);
+           
+
+        }
+        .card >img{
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: 0px 0px 5px rgb(0, 0, 0);
+            border-radius: 4px;
+            
+        }
+       .info >h1{
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(2, 0, 0);
+
+       }
+       .info >p{
+        font-size: 14px;
+        color: rgb(14, 14, 14);
+        font-weight: 300;
+       }
+       .card-btn{
+        display: flex;
+        justify-content: space-between;
+        
+       }
+       .card-btn >button{
+        width: 120px;
+        height: 30px;
+        padding: 4px;
+        border: none;
+        font-weight: 600;
+        border-radius: 4px;
+        background-color: #50E9A3;
+        box-shadow: 1px 1px 1px rgb(10, 10, 10);
+        cursor: pointer;
+
+       }
+       .card-btn >.save{
+        background-color: #f2f3f2;
+        border: 1px solid black;
+
+       }
+    </style>
+</head>
+
+<body>
+    <!-- header part -->
+    <header>
+        <nav class="navbar">
+            <h1>Boldo</h1>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                        <a href="">Product</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                        <button>Login</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <div class="hero">
+            <div class="hero-right">
+                <h1>Save time by building <br>fast with Boldo Template</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> voluptatem corporis quas excepturi animi in
+                    nisi?
+
+                </p>
+                <div class="btn">
+                    <button>Buy Template</button>
+                    <button class="learn">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-left">
+                <div class="above">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                </div>
+                <div class="below">
+                    <div class="box3"></div>
+                    <div class="box4"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- main section -->
+     <main>
+        <h1>Popular Products</h1>
+
+        <!-- card1 -->
+        <div class="cart">
+        <div class="card">
+            <img src="/card.jpeg" alt="card">
+            <div class="info">
+                <h1>Template A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, dignissimos aperiam?</p>
+
+            </div>
+            <div class="card-btn">
+                <button>Get</button>
+                <button class="save">Save</button>
+            </div>
+
+        </div>
+
+                
+        <!-- card2 -->
+      
+        <div class="card">
+            <img src="/card.jpeg" alt="card">
+            <div class="info">
+                <h1>Template A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, dignissimos aperiam?</p>
+
+            </div>
+            <div class="card-btn">
+                <button>Get</button>
+                <button class="save">Save</button>
+            </div>
+
+        </div>
+
+                
+        <!-- card3 -->
+     
+        <div class="card">
+            <img src="/card.jpeg" alt="card">
+            <div class="info">
+                <h1>Template A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, dignissimos aperiam?</p>
+
+            </div>
+            <div class="card-btn">
+                <button>Get</button>
+                <button class="save">Save</button>
+            </div>
+
+        </div>
+                
+        <!-- card4 -->
+        
+        <div class="card">
+            <img src="/card.jpeg" alt="card">
+            <div class="info">
+                <h1>Template A</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, dignissimos aperiam?</p>
+
+            </div>
+            <div class="card-btn">
+                <button>Get</button>
+                <button class="save">Save</button>
+            </div>
+        </div>
+        </div>
+     </main>
+
+</body>
+
+</html>

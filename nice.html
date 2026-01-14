@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+     font-family: sans-serif;
+
+    }
+    header{
+        background-color: rgb(28, 28, 66);
+        margin: 6px;       
+        border-radius: 12px;
+        padding: 6px;
+    }
+    .navbar{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* logo */
+    .navbar >h1{
+        color: white;
+        font-size: 22px;
+        font-family:  Geneva;
+        padding-left: 4px;
+
+    }
+    /* link */
+    .link  {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 5px;
+    }
+    .link ul >li{
+        background-color: rgba(125, 125, 206, 0.473);
+        list-style: none;
+        display: flex;
+        gap: 14px;
+       padding: 6px 18px;
+       border-radius: 12px;
+      
+    }
+    .link ul li>a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.774);
+        font-weight: 500;
+    }
+  .link ul li .active{
+        color: rgb(29, 13, 248);
+        background-color: white;
+        padding: 1px 6px;
+        border-radius: 6px;
+        height: 100%;
+   
+        
+       
+    }
+    /* icon */
+   .icon{
+        background-color: rgba(125, 125, 206, 0.473); 
+        color: rgba(243, 240, 240, 0.932);
+        padding: 6px;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        font-size: 12px;
+   }
+   /* hero section */
+   .hero{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+
+   /* hero left */
+   .hero >img{
+    
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+     box-shadow: 1px 1px 1px  rgb(143, 143, 160);
+   }
+   .hero-left{
+    padding: 4px;
+     background-color: rgba(54, 54, 119, 0.774);
+         position: absolute;
+        top: 240px;
+        left:50px;
+        height: 100px;
+        width: 350px;
+        border-radius: 8px;
+     box-shadow: 1px 1px 1px  rgb(143, 143, 160);
+        
+       
+   }
+   .hero-left >h1{
+    margin: 0;
+    font-size: 18px;
+   font-weight: 500;
+    color: rgba(245, 245, 245, 0.856);
+   }
+   .hero-left >button{
+    margin-top: 7px;
+    border-radius: 4px;
+    border: none;
+    padding: 4px 12px;
+    color: rgb(33, 33, 88);
+
+   }
+
+   /* hero right side */
+
+   .hero-right{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+ 
+   }
+   .above{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  
+   }
+   .above >img{
+    border-radius: 12px;
+    height: 300px;
+    width: 260px;
+     box-shadow: 1px 2px 10px  rgb(33, 43, 141);
+
+   }
+   .above >button{
+    border-radius: 4px;
+    border: none;
+    padding: 4px 12px;
+    color: rgb(33, 33, 88);
+    position: absolute;
+    top: 250px;
+    left: 10px;
+   }
+   .above-right {
+
+    height: 300px;
+    width: 240px;
+    background-color: rgba(125, 125, 206, 0.473);
+    border-radius: 12px; 
+ 
+     box-shadow: 1px 2px 10px  rgb(69, 69, 70);
+   }
+   .above-right>button{
+    border-radius: 4px;
+    border: none;
+    padding: 4px 12px;
+    color: rgb(33, 33, 88);
+    margin:5px;
+
+   }
+.below{
+    margin-top: 6px;
+      background-color: rgba(125, 125, 206, 0.473);
+    height: 100px;
+    width: 530px;
+    padding: 6px;
+    border-radius: 16px;
+     box-shadow: 1px 1px 1px  rgb(144, 144, 211);
+} 
+   .below >button{
+    background-color: rgb(12, 12, 41);
+    color: rgba(243, 243, 243, 0.959);
+    border: none;
+    padding: 4px 8px;
+    border-radius: 6px;
+    
+   }
+   .below >h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 6px;
+    color: rgb(252, 252, 252);
+   }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>
+                Rosall
+            </h1>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="#" class="active">Home</a>
+                        <a href="#">Admission</a>
+                        <a href="#">Why Rosall</a>
+                        <a href="#"> Key Info</a>
+                        <a href="#">Policies</a>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+        </nav>
+        <!-- hero section -->
+         <div class="hero">
+            <img src="girl.jpg" alt="student">
+            <div class="hero-left">
+                <h1>Find Out more about life at Rosall <br>School through the eye of the pupils</h1>
+                <button >Learn More 
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="hero-right">
+                
+                <div class="above">
+                     <img src="student.jpg" alt="student">
+                   <button >Learn More 
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="above-right">
+                      
+                  <button >Rosall Sixth Form
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                  <button >Elito Football Programme
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                  <button > Piano Academy
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                  <button >Golf Academy
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                  <button >Broadway Academy
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                  <button >Rosall News
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                  <button >Upcomming Events
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                </div>
+                </div>
+                <div class="below">
+                    <button >Learn More
+                    
+                      <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <h1>A very proud, coastal day and <br>
+                    boarding school.
+                </h1>
+                </div>
+            </div>
+         </div>
+    </header>
+</body>
+
+</html>

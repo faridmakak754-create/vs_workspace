@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins";
+
+        }
+
+        header {
+            background-color: rgb(19, 19, 80);
+            margin: 9px;
+            border-radius: 8px;
+            padding-bottom: 8px;
+        }
+
+        /* nav bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8px;
+            border-radius: px;
+        }
+
+        .navbar>h1 {
+            color: white;
+            font-size: 20px;
+
+
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .link ul>li {
+            background-color: rgba(147, 147, 214, 0.664);
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 4px 8px;
+            border-radius: 10px;
+
+
+        }
+
+        .link ul li>a {
+            text-decoration: none;
+            color: rgb(230, 230, 230);
+
+        }
+
+        .icon {
+            background-color: rgba(147, 147, 214, 0.664);
+            color: rgb(228, 226, 226);
+            padding: 4px;
+            border-radius: 50%;
+            font-size: small;
+
+        }
+
+        .icon>i {
+            font-size: small;
+            padding: 2px;
+        }
+
+        /* hero parrt  */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        /*hero image  */
+        .hero>img {
+            position: relative;
+            height: 480px;
+            width: 510px;
+            object-fit: cover;
+            padding-left: 8px;
+            border-radius: 10px;
+
+        }
+
+        .hero-right {
+            position: relative;
+            background-color: rgba(54, 54, 122, 0.753);
+            width: 300px;
+            height: 100px;
+            border-radius: 12px;
+            position: absolute;
+            top: 400px;
+            left: 70px;
+        }
+
+        .hero-right>h1 {
+            padding: 8px;
+            color: rgb(233, 231, 231);
+            font-size: 16px;
+            margin: 0;
+
+        }
+
+        .hero-right>button {
+            background-color: antiquewhite;
+            border: none;
+            color: rgb(45, 45, 104);
+            padding: 4px 8px 4px 8px;
+            margin: 0 0 6px 6px;
+            border-radius: 6px;
+
+        }
+
+        /* hero - left side */
+
+        .hero-left {
+           position: relative;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            padding-right: 6px;
+        }
+
+        .hero-left>img {
+         
+            height: 350px;
+            width: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+
+        .quick {
+            
+            padding-left: 6px;
+            height: 350px;
+            width: 250px;
+            background-color: rgba(147, 147, 214, 0.664);
+            border-radius: 12px;
+
+
+        }
+
+        .quick>h1 {
+            margin: 0;
+            color: rgb(224, 224, 224);
+            font-size: 22px;
+            padding: 8px;
+            
+        }
+    
+        .quick >button{
+           margin: 2px;
+            padding: 8px;
+            border-radius: 8px;
+            border: none;
+            color: rgb(45, 45, 104);
+            font-weight: 400;
+        }
+        .btn{
+            position: absolute;
+           top: 300px;
+           left: 20px;
+        }
+        .btn >button{
+           
+          padding: 4px;
+            border-radius: 8px;
+            border: none;
+            color: rgb(45, 45, 104);
+            font-weight: 400;
+
+        }
+        .info{
+            height: 200px;
+            width: 300px;
+            background-color: aqua;
+        }
+        .left-card{
+            background-color: aquamarine;
+            height: 200px;
+            width: 300px;
+            display: flex;
+            justify-content: end;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Rosall</h1>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="#" class="active">Home</a>
+                        <a href="#">Admission</a>
+                        <a href="#">Why Rosall?</a>
+                        <a href="#">Key Info</a>
+                        <a href="#">Policies</a>
+                        <a href="#">More</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <div class="hero">
+            <img src="girl.jpg" alt="girl">
+            <div class="hero-right">
+                <h1>Find out more about at Rosall <br>School through the eyes of the pupils</h1>
+                <button>Learn more
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              
+            </div>
+            <div class="hero-left">
+                <img src="student.jpg" alt="student">
+                <div class="btn">
+                     <button>Rossal Sixth Forms 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="quick">
+                    <h1>Quick Links</h1>
+                    <button>Rossal Sixth Forms 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button>Elite Football Programme
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button>Piano Academy
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button>Golf Academy
+                        <i class="fa-solid fa-arrow-right"></i>
+                     </button>
+                    <button>Broadway Academy 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button>Rosalli News 
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button>Upcomming Events
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+ <div class="left-card">
+
+                </div>
+            
+            </div>
+            
+               
+        </div>
+        
+      
+    </header>
+</body>
+
+</html>
